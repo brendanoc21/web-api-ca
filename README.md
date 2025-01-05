@@ -6,14 +6,13 @@ Name: Brendan O'Connor
 
 A bullet-point list of the ADDITIONAL features you have implemented in the API **THAT WERE NOT IN THE LABS** (or modifications to existing features)
  
- + Feature 1 
- + Feature 2 
- + Feature 3 
- + etc
+ + N/A
 
 ## Setup requirements.
 
 [ Outline any non-standard setup steps necessary to run your app locally after cloning the repo.]
+
++ N/A
 
 ## API Configuration
 
@@ -24,10 +23,10 @@ REMEMBER: DON'T PUT YOUR OWN USERNAMES/PASSWORDS/AUTH KEYS IN THE README OR ON G
 ______________________
 NODEENV=development
 PORT=8080
-HOST=
-mongoDB=YourMongoURL
-seedDb=true
-secret=YourJWTSecret
+HOST=localhost
+MONGODB=YourMongoURL
+TMDB_KEY=YourTMDBapiKey
+SECRET=YourJWTSecret
 ______________________
 
 ## API Design
@@ -44,9 +43,14 @@ If you have your API design on an online platform or graphic, please link to it 
 
 Give details of authentication/security implemented on the API (e.g. passport/sessions). Indicate which routes are protected.
 
++ All routes apart from the home page, login page and signup page are protected
+
 ## Integrating with React App
 
 Describe how you integrated your React app with the API. List the views that use your Web API instead of the TMDB API. Describe any other updates to the React app from Assignment One.
+
++ Login and Signup pages added
++ Header adjusted based on whether user is logged in
 
 ## Independent learning (if relevant)
 
